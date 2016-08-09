@@ -1,0 +1,96 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/materialize.min.css" media="screen,projection" />
+   <link href="fonts/google-material/material-icons.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/mean.css" />
+
+</head>
+<body>
+
+<button><a class=" grey darken-2 modal-trigger " href="#modal1">modal</button>
+
+	<div id="modal1" class="row">
+
+    <div class="col s12 z-depth-6 card-panel">
+
+      <form class="appt-form">
+
+        <div class="row" action="submit2.php" method="POST">
+
+          <div class="input-field col s12 center">
+              <p>Appointment Form</p>
+          </div>
+
+        </div>
+
+        <div class="row margin">
+
+          <div class="input-field col s12">
+
+            <i class="mdi-social-person-outline prefix"></i>
+            <input class="validate" id="username" type="text">
+
+            <label for="username" data-error="wrong" data-success="right" class="active">Full Name</label>
+              </div>
+          </div>
+
+        <div class="row margin">
+            <div class="input-field col s12">
+
+            <i class="mdi-social-person-outline prefix"></i>
+            <input class="validate" id="gender" type="text">
+
+            <label for="gender" data-error="wrong" data-success="right" class="active">Gender</label>
+              </div>
+          
+        </div>
+
+        <div class="row margin">
+          <div class="input-field col s12">
+          <i class="mdi-social-person-outline prefix"></i>
+            <input  id="age" type="number" name="age" class="validate">
+              <label class="active" for="age" data-error="wrong" data-success="right">Age</label>
+              </div>
+          </div>
+         <div class="row margin">
+        <div class="input-field col s12">
+         <i class="mdi-action-lock-outline prefix"></i>
+          <input id="date" type="text" name="Ddate" class="validate">
+          <label class="active" for="date" data-error="wrong" data-success="right">Desired Date & Time</label>
+          </div>
+        </div>
+         <div class="row margin">
+
+          <div class="input-field col s12">
+
+            <i class="mdi-social-person-outline prefix"></i>
+            <input class="validate" id="occupation" type="text">
+
+            <label for="occupation" data-error="wrong" data-success="right" class="active">Occupation</label>
+              </div>
+          </div>
+          <div class="row margin">
+                  <div class="input-field col s12">
+                      <i class="material-icons prefix">mode_edit</i>
+                      <textarea id="textarea1" type="text" class="materialize-textarea" length="1000"></textarea> 
+                      <label for="textarea1">Your Message</label>
+                  </div>
+          </div>
+           <div class="row">
+
+          <div class="input-field col s12">
+
+            <a href="" class="btn waves-effect waves-light col s12">Checkin</a>
+
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+</body>
+</html>
