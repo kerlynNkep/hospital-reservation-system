@@ -10,10 +10,6 @@
 	margin: 0;
 	padding: 0;
 }
-
-body {
-	background-image:  url(images/pic.png);
-}
 .card {
 	box-shadow: 10px 10px 10px 25px  blue lighten-5;
 }
@@ -38,24 +34,43 @@ footer {
 #signup_form {
 	/*box-shadow: 10px 0px 10px 10px grey;*/
 }
-.parallax-container {
-      height: "20%";
-    }
+
  #p_tag {
  	align: center;
  }
+
 #pic {
 	border-radius: 40px 40px 40px 40px ;
 }
+
 #a_pic {
 	border-radius: 40px 40px 0px 0px ;
 }
+
 #home_img {
 	border-radius: 25px 25px 0px 0px;
 }
+
 .working {
 	font-color: grey ;
 }
+
 ul {
 	text-decoration-color: light-green;
+}
+
+.parallax-container {
+      height: 20%;
+    }
+
+.option {
+  		-animation-iteration-count: infinite ;
+  }
+
+ #log {
+  	border-color: red;
+  }
+
+i.icon-red {
+    color: red;
 }
