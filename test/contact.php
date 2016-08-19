@@ -39,31 +39,31 @@
    <!-- <div class="section white">-->
        <div class="row">
           <div class="col s3">.</div>
-             <form class="col s8 " id="form1">
+             <form class="col s8 " id="form1" method="POST" action="">
                 <div class="row">
                 <h3>Fill The Form Below To Contact Us</h3>
                   <div class="input-field col s5">
                       <i class="material-icons prefix">account_circle</i>
-                      <input id="icon_prefix" type="text" class="validate">
+                      <input id="icon_prefix" type="text" class="validate" name="fname">
                       <label for="icon_prefix">Full Names</label>
                   </div>
                 <div class="input-field col s3">
                       <i class="material-icons prefix">phone</i>
-                      <input id="icon_telephone" type="tel" class="validate">
+                      <input id="icon_telephone" type="tel" class="validate" name="phoneNo">
                       <label for="icon_telephone">Telephone</label>
                 </div>
                </div>
                <div class="row">
                   <div class="input-field col s8">
                       <i class="material-icons prefix">email</i>
-                      <input id="icon_prefix" type="text" class="validate">
+                      <input id="icon_prefix" type="text" class="validate" name="email">
                       <label for="icon_prefix">Email</label>
                   </div>
                </div>
                <div class="row">
                   <div class="input-field col s8">
                       <i class="material-icons prefix">subtitles</i>
-                      <input id="icon_prefix" type="text" class="validate">
+                      <input id="icon_prefix" type="text" class="validate" name="subject">
                       <label for="icon_prefix">Subject</label>
                   </div>
                  
@@ -71,7 +71,7 @@
                <div class="row">
                   <div class="input-field col s8">
                       <i class="material-icons prefix">mode_edit</i>
-                      <textarea id="textarea1" type="text" class="materialize-textarea" length="1000"></textarea> 
+                      <textarea id="textarea1" type="text" name="message" class="materialize-textarea" length="1000"></textarea> 
                       <label for="textarea1">Your Message</label>
                   </div>
                </div>
