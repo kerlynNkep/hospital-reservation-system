@@ -1,3 +1,4 @@
+
 window.onload = function () {
 
 //Better to construct options first and then pass it as a parameter
@@ -30,7 +31,7 @@ window.onload = function () {
             { label: "requests",  y: 30  },
             { label: "Complains", y: 20  },
             { label: "recomendations", y:20 },
-            { label: "appreciation", y: 20  }
+            { label: "appreciation", y: <?php echo $result?> }
             
          ]
       }

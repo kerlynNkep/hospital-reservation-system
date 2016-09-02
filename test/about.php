@@ -70,7 +70,7 @@
       			<img class="activator" src="images/k.jpg" id="a_pic" style="height: 300px">
    		 	</div>
     		<div class="card-content">
-     		 	<span class="card-title activator grey-text text-darken-4">Designer<i class="material-icons right">more_vert</i></span>
+     		 	<span class="card-title activator grey-text text-darken-4">Founder && Designer<i class="material-icons right">more_vert</i></span>
     		</div>
    			 <div class="card-reveal">
       			<span class="card-title grey-text text-darken-4">NKEP KERLYN<i class="material-icons right">close</i></span>
@@ -158,12 +158,22 @@
 	<script type="text/javascript" src="j-s/jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src="j-s/materialize.min.js"></script>
   <script type="text/javascript" src="j-s/slider.js"></script>
+  <script src="j-s/angular.min.js"></script> 
    <!-- Modal jquery initialiser-->
            <script type="text/javascript">
               $(document).ready(function (){
            // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
                 $('.modal-trigger').leanModal();
+                $('select').material_select();
+
                }); 
            </script>
+            <script>
+              var app = angular.module('myApp', []);
+              app.controller('validateCtrl', function($scope) {
+              // $scope.user = 'John Doe';
+              // $scope.email = 'john.doe@gmail.com';
+             });
+            </script>
 </body>
 </html>

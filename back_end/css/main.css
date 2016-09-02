@@ -1,7 +1,75 @@
+@font-face {
+	font-family: 'Roboto-Light';
+	src: local('?'), 
+	url('font/Roboto/Roboto-Light.ttf') format('truetype');
+	font-weight: light;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto-Thin';
+	src: local('?'), 
+		url('font/Roboto/Roboto-Thin.ttf') format('truetype');
+	font-weight: thin;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: local('?'), 
+		url('font/Roboto/Roboto-Regular.ttf') format('truetype');
+	font-weight: thin;
+	font-style: normal;
+}
+
+body{
+	font-size: 15px;
+	max-width: 100%;
+	overflow-x: hidden;
+	height: 100%;
+}
+
+.robotoReg{
+
+	font-family: 'Roboto-Regular';
+}
+
+.robotoLight{
+
+	font-family: 'Roboto-Light';
+}
+
+.robotoThin{
+
+	font-family: 'Roboto-Thin';
+}
+
 .side-nav {
 	margin-top: -100;
 }
 
-body{
-	background-image: url('images/apic.png');
+.side-nav li a:hover, #nav-mobile li:hover {
+  border-bottom: 3px solid #eee;
+
 }
+#fix:hover {
+    color: blac;
+}
+.side-nav li a{
+	color:white;
+}
+
+.side-nav li a.active {
+  color: teal;
+}
+
+ header, main, footer {
+      			padding-left: 240px;
+    }
+
+ @media only screen and (max-width : 992px) {
+      			header, main, footer {
+        			padding-left: 0;
+      			}
+    }
+ .test{
+    	display: inline-block;
+  }

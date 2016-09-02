@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+
 	<!-- start of nav bar-->
 	 <div class="navbar-fixed">
 		<nav>
@@ -20,11 +21,13 @@
         	 <li><a href="about.php"> <i class="material-icons left">group</i>about us</a></li>
         	<li><a href="contact.php"> <i class="material-icons left">phone</i>contact us</a></li>
           <li><a href="#appt"><i class="material-icons left">library_books</i>appointment</a></li>
-        	<!-- <li><a class=" lightgreen darken-2 modal-trigger " href="#modal1"><i class="material-icons left">lock</i>Login</a></li>-->
+        	
      	  </ul>
     	</div>
  	 </nav>
  	 </div><!--close of nav bar-->
+
+
      <!--start of slideshow-->  
 	 <div class="slider">
     <ul class="slides">
@@ -90,45 +93,48 @@
          <div class="col s1">...</div>
        </div>
        <br/>
+
        <div class="row ">
        		<div class="col s12 center">
        			<h4><span class="grey-text text-darken-2 "><b> SERVICES</b></span> WE OFFER</h4>
        		<hr style="width:10%; border-color:red;" />
        		</div>
       </div>
+      
       <div class="z-depth">
-        <div class="row">
-       <div class="col s1">..</div>
-       <div class="card-image small col s3 ">
-           <img src="images/lab.jpg" class="responsive-img materialboxed">
-           <p class="center">Laboratory Services</p>
-       </div>
-        <div class="card-image small col s3 ">
-           <img src="images/blood.jpg" class="responsive-img materialboxed">
-            <p class="center">Sterilise and Safe Blood Services</p>
-       </div>
-       <div class="card-image small col s3">
-           <img src="images/rad.jpg" class="responsive-img materialboxed">
-           <p class="center">X-ray/ Radiology</p>
-       </div>
-        <div class="col s1">..</div>
-</div>
- <div class="row">
-       <div class="col s1">..</div>
-       <div class="card-image small col s3">
-           <img src="images/pricing3.jpg" class="responsive-img materialboxed">
-           <p class="center">Surgical Services</p>
-       </div>
-       <div class="card-image small col s3 ">
-           <img src="images/emer.jpg" class="responsive-img materialboxed">
-           <p class="center">Pick and Drop By First Class Ambulances</p>
-       </div>
-        <div class="card-image small col s3 " >
-           <img src="images/hos.jpg" class="responsive-img materialboxed" >
-            <p class="center">Hospitalization Services</p>
-       </div>
-        <div class="col s1">..</div>
-</div></div>
+          <div class="row">
+                <div class="col s1">..</div>
+                <div class="card-image small col s3 ">
+                      <img src="images/lab.jpg" class="responsive-img materialboxed">
+                      <p class="center">Laboratory Services</p>
+                </div>
+                <div class="card-image small col s3 ">
+                      <img src="images/blood.jpg" class="responsive-img materialboxed">
+                      <p class="center">Sterilise and Safe Blood Services</p>
+                </div>
+                <div class="card-image small col s3">
+                      <img src="images/rad.jpg" class="responsive-img materialboxed">
+                      <p class="center">X-ray/ Radiology</p>
+                </div>
+                <div class="col s1">..</div>
+          </div>
+          <div class="row">
+                <div class="col s1">..</div>
+                <div class="card-image small col s3">
+                      <img src="images/pricing3.jpg" class="responsive-img materialboxed">
+                      <p class="center">Surgical Services</p>
+                </div>
+                <div class="card-image small col s3 ">
+                      <img src="images/emer.jpg" class="responsive-img materialboxed">
+                      <p class="center">Pick and Drop By First Class Ambulances</p>
+                </div>
+                <div class="card-image small col s3 " >
+                      <img src="images/hos.jpg" class="responsive-img materialboxed" >
+                      <p class="center">Hospitalization Services</p>
+                </div>
+                <div class="col s1">..</div>
+          </div>  
+      </div>
 
        	<br/>
        	<div class="row" id="appt" >
@@ -248,6 +254,7 @@
           </div>
         </div></div>
        
+
        <!--footer-->
       <footer class="page-footer grey darken-3">
           
@@ -259,17 +266,14 @@
             
             </div>
           </div>
-        </footer>
-
-              <!--including other files-->
-      <!-- <?php //require 'login_modal.php';?>
-       <?php //require 'signup_modal.php';?>-->
+     </footer>
       
 
   <!--calling of scripts-->
-  	<script type="text/javascript" src="j-s/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="j-s/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="j-s/materialize.min.js"></script>
 	<script type="text/javascript" src="j-s/slider.js"></script>
+  <script src="j-s/angular.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
     	$('.materialboxed').materialbox();
@@ -278,6 +282,7 @@
          // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
            $('.modal-trigger').leanModal();
            $('.parallax').parallax();
+           $('select').material_select();
           /* $('.datepicker').pickadate({
               selectMonths: true, // Creates a dropdown to control month
               selectYears: 15, // Creates a dropdown of 15 years to control year
@@ -286,7 +291,13 @@
             });*/
          });
 	</script>
-  
+   <script>
+      var app = angular.module('myApp', []);
+      app.controller('validateCtrl', function($scope) {
+      // $scope.user = 'John Doe';
+      // $scope.email = 'john.doe@gmail.com';
+    });
+</script>
 
   
 </body>
